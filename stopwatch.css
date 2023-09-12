@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to top,
+    rgb(1 20 76),
+    rgb(83 112 234),
+    rgb(86 113 230),
+    rgb(80 95 243)
+  );
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.box p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  text-shadow: 0px 0px 5px #fff;
+}
+.box p .minute {
+  position: relative;
+}
+.box p .minute::before {
+  font-family: Arial, Helvetica, sans-serif;
+  content: "MINUTE";
+  position: absolute;
+  top: -10px;
+  left: 13px;
+  font-size: 10px;
+  opacity: 0.5;
+  text-shadow: 0px 0px 0px;
+}
+.box p .scend {
+  position: relative;
+}
+.box p .scend::before {
+  font-family: Arial, Helvetica, sans-serif;
+  content: "SCEND";
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  font-size: 10px;
+  opacity: 0.5;
+  text-shadow: 0px 0px 0px;
+}
+.box p .ms {
+  position: relative;
+}
+.box p .ms::before {
+  font-family: Arial, Helvetica, sans-serif;
+  content: "MS";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 10px;
+  opacity: 0.5;
+  text-shadow: 0px 0px 0px;
+}
+
+.box div button {
+  background-color: #fff;
+  color: rgb(1 20 76);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  margin: 10px 10px;
+  width: 200px;
+  cursor: pointer;
+  font-size: 20px;
+}
